@@ -15,7 +15,7 @@ class Web3Tools {
   public $network = 4;
   public $contract = '0x4c75c69156c97d5f606553fcefa55e98e6f85020';
 
-   public function __construct ($rpc = null, $network = null, $contract = null) {
+   public function __construct ($rpc = null, $contract = null, $network = null) {
      if ($rpc) $this->jsonrpc_url = $rpc;
      if ($network) $this->network = $network;
      if ($contract) $this->contract = $contract;
