@@ -54,7 +54,7 @@ class Web3Tools {
    public function getNftUri() {
     $params = new stdClass;
     $params->to = $this->contract;
-    $params->data = '0xc87b56dd0000000000000000000000000000000000000000000000000000000000000001';
+    $params->data = '0xc87b56dd0000000000000000000000000000000000000000000000000000000000000001'; // TODO: PASS IN NFT ID 
     $request = $this->buildRpcRequest('eth_call', $params);
     $response = $this->makeRpcRequest($request);
 
