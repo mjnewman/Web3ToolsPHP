@@ -11,5 +11,6 @@ $w3t = new Web3Tools(
     4 // NETWORK ID    
 );
 
-echo $w3t->getNftUri(); // RETURNS TOKEN URI FOR 1ST TOKEN OF SPECIFICED CONTRACT
+$tokenURI = $w3t->getNftUri(); // RETURNS TOKEN URI FOR 1ST TOKEN OF SPECIFICED CONTRACT
+$metadata = json_decode(file_get_contents($tokenURI)); // GET TOKEN METADATA
 ```
