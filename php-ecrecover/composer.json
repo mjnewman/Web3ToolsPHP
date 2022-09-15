@@ -1,0 +1,17 @@
+{
+    "name": "wekisen/php-ecrecover",
+    "description": "PHP ECRecover Example",
+    "keywords": ["ecrecover"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Wekisen",
+            "homepage": "https://github.com/Wekisen/php-ecrecover"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "kornrunner/keccak": "^1.0",
+        "ext-gmp": "*"
+    }
+}
